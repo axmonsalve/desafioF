@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DESAFIO FALABELLA AUTOMATION SUITE" preserve-order="true">
+    <!--<groups>
+        <run>
+            <include name="UI" />
+            <include name="transaccional" />
+        </run>
+    </groups>-->
+    <listeners>
+        <listener class-name="main.java.utils.SuiteListener"/>
+    </listeners>
+    <parameter name="browserName" value="chrome"/>
+    <test name="Automation Test Cases">
+        <classes>
+            <class name="test.java.registerTests.RegisterTests"/>
+            <class name="test.java.loginTests.LoginTests"/>
+            <class name="test.java.getProduct.getProductTests"/>
+        </classes>
+    </test>
+</suite>
