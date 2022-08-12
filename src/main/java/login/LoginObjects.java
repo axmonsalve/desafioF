@@ -7,9 +7,13 @@ public class LoginObjects {
 
     @FindBy(id = "testId-cc-login-form-email-input")
     protected WebElement emailInput;
+    @FindBy(id = "testId-cc-login-form-email-help")
+    protected WebElement invalidEmailMessage;
 
     @FindBy(id = "testId-cc-login-form-password-input")
     protected WebElement passwordInput;
+    @FindBy(id = "testId-cc-login-form-password-help")
+    protected WebElement invalidPasswordMessage;
 
     @FindBy(id = "testId-cc-login-form-submit")
     protected WebElement ingresarButton;
@@ -22,5 +26,9 @@ public class LoginObjects {
 
     @FindBy(xpath = "//div[contains(text(),'Lo sentimos')]")
     protected WebElement loSentimosLoginMessage;
+
+    @FindBy(linkText = "Restablecer contraseña")
+    protected WebElement restablecerPassLink;
+
 
 }
